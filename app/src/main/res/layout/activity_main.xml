@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="sans-serif-black"
+            android:text="CHART A"
+            android:textSize="20dp"
+            android:textColor="#9C27B0"/>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/LinechartA"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cus_chart">
+        </com.github.mikephil.charting.charts.LineChart>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="sans-serif-black"
+            android:text="CHART B"
+            android:textSize="20dp"
+            android:textColor="#9C27B0"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/LinechartB"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cus_chart">
+        </com.github.mikephil.charting.charts.LineChart>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="sans-serif-black"
+            android:text="SETTING"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:textColor="#9C27B0"
+                android:text="Select cylinder ---> "/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/RB1"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#0C0004"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cyl A"/>
+                <RadioButton
+                    android:id="@+id/RB2"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#0C0004"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cyl B"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EDT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittex"
+                android:ems="5"
+                android:textColor="#010101"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColorHint="#BDB9B9"
+                android:hint=" Force (N)" />
+
+            <EditText
+                android:id="@+id/EDT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittex"
+                android:ems="5"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:textColor="#010101"
+                android:hint=" Cycle (T)"
+                android:textColorHint="#BDB9B9"/>
+
+            <Button
+                android:id="@+id/BTAPPLY1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_bttron"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:text="APPLY"
+                android:fontFamily="sans-serif-black"
+                app:backgroundTint="#13E11B" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:textColor="#9C27B0"
+            android:text="Setting Air"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/EDT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittex"
+                android:ems="5"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:textColor="#010101"
+                android:hint=" Air PA"
+                android:textColorHint="#BDB9B9"/>
+            <EditText
+                android:id="@+id/EDT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittex"
+                android:ems="5"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:textColor="#010101"
+                android:hint=" Air PB"
+                android:textColorHint="#BDB9B9"/>
+            <Button
+                android:id="@+id/BTAPPLY2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_bttron"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:text="APPLY"
+                android:fontFamily="sans-serif-black"
+                app:backgroundTint="#18CAE1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/BTSTART"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_bt1"
+                android:text="START"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                app:backgroundTint="#13E11B" />
+
+            <Button
+                android:id="@+id/BTSTOP"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_bt2"
+                android:text="STOP"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                app:backgroundTint="#DF1717" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
